@@ -1,5 +1,5 @@
 const { Router } = require('express');
-
+const Cidades = require('../controllers/CidadeController');
 const routes = Router();
 
 
@@ -12,9 +12,7 @@ routes.get('/', (req,resp) => {
 routes.get('/cidades', (req,resp) => {
     resp.send('Get Cidades por nome e estado');
 });
-routes.post('/cidades', (req,resp) => {
-    resp.send('Post Cidades');
-});
+routes.post('/cidades', Cidades.store);
 
 
 //Clientes

@@ -1,5 +1,5 @@
 {
-  "name": "Api_CidadesPessoas",
+  "name": "api_cidades_pessoas",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Felipe Friedrich",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.2",
